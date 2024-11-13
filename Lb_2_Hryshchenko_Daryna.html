@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Футбольні команди</title>
+    
+    <!-- Підключення зовнішнього CSS-файлу -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- CSS у секції <style> -->
+    <style>
+        .tab-content {
+            display: none;
+        }
+        .active {
+            display: block;
+            font-weight: bold;
+        }
+        #tabs {
+            background-color: #333;
+            padding: 10px;
+            border-bottom: 1px solid #666;
+        }
+        #tabs .tab {
+            display: inline-block;
+            padding: 10px 20px;
+            cursor: pointer;
+            color: white;
+        }
+        #tabs .active-tab {
+            background-color: #666;
+            font-weight: bold;
+        }
+        /* Додаткові стилі для відступів між рядками */
+        .team-info p {
+            margin: 8px 0; /* відступ між рядками */
+        }
+        .team-logo {
+            width: 100px; /* розмір картинки */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<h1 style="text-align: center; color: green;">Футбольні команди світу</h1>
+
+<!-- Вкладки з назвами команд -->
+<div id="tabs">
+    <div class="tab active-tab" onclick="openTab('tab1')">Barcelona</div>
+    <div class="tab" onclick="openTab('tab2')">Real Madrid</div>
+    <div class="tab" onclick="openTab('tab3')">Liverpool</div>
+</div>
+
+<!-- Вміст вкладок -->
+<div id="tab-content">
+    <div id="tab1" class="tab-content active"> <!-- Спочатку активний -->
+        <h2>FC Barcelona</h2>
+        <div class="team-info">
+            <p><strong>Логотип/емблема:</strong></p>
+            <img src="https://upload.wikimedia.org/wikipedia/uk/thumb/4/47/FC_Barcelona_%28crest%29.svg/175px-FC_Barcelona_%28crest%29.svg.png" alt="Логотип Барселони" class="team-logo">
+            <p><strong>Дата створення:</strong> 29 листопада 1899 року.</p>
+            <p><strong>Кричалка:</strong> Девіз клубу – "Més que un club" ("Більше, ніж клуб").</p>
+            <p><strong>Домашній стадіон:</strong> Камп Ноу (Camp Nou), Барселона, Іспанія. Місткість – близько 99,354 глядачів.</p>
+            <p><strong>Ліга:</strong> Ла Ліга (іспанська Прімера).</p>
+            <p><strong>Найпопулярніші гравці:</strong> Ліонель Мессі, Хаві, Андрес Іньєста, Роналдіньо, Карлес Пуйоль.</p>
+            <p><strong>Склад команди (сезон 2024/25):</strong></p>
+            <ul>
+                <li><strong>Голкіпери:</strong> Дієго Кочен, Арон Яакобішвілі, Войцех Щенсний, Марк-Андре тер Стеґен, Іньякі Пенья, Андре Астралага.</li>
+                <li><strong>Захисники:</strong> Пау Кубарсі, Жерар Мартін, Ерік Гарсія, Серджі Вілорія, Андрес Куенка, Рональд Араухо, Алекс Бальде, Андреас Крістенсен, Жуль Кунде, Ектор Форт, Іньїго Мартінес.</li>
+                <li><strong>Півзахисники:</strong> Фермін, Пабло Торре, Марк Берналь, Гільє Фернандес, Дані Ольмо, Педрі, Ґаві, Френкі де Йонг, Марк Касадо.</li>
+                <li><strong>Нападники:</strong> Пау Віктор, Ансу Фаті, Тоні Фернандес, Рафінья Діас, Ферран Торрес, Роберт Левандовський, Ламін Ямаль.</li>
+            </ul>
+            <p><strong>останні матчі:</strong></p>
+            <ul>
+                <li>Барселона 0:1 Реал Сосьєдад (10.11.2024)</li>
+                <li>Барселона 5:2 Црвена Звезда (06.11.2024)</li>
+                <li>Барселона 3:1 Еспаньйол (03.11.2024)</li>
+                <li>Барселона 4:0 Реал Мадрид (26.10.2024)</li>
+                <li>Барселона 4:1 Баварія (23.10.2024)</li>
+            </ul>
+        </div>
+    </div>
+    <div id="tab2" class="tab-content">
+        <h2>FC Real Madrid</h2>
+        <div class="team-info">
+            <p><strong>Логотип/емблема:</strong></p>
+            <img src="https://upload.wikimedia.org/wikipedia/uk/thumb/5/56/Real_Madrid_CF.svg/175px-Real_Madrid_CF.svg.png" alt="Логотип Реал Мадрид" class="team-logo">
+            <p><strong>Дата створення:</strong> 6 березня 1902 року.</p>
+            <p><strong>Кричалка:</strong> Часто використовується "¡Hala Madrid!" (Вперед, Мадрид!).</p>
+            <p><strong>Домашній стадіон:</strong> Сантьяго Бернабеу, Мадрид, Іспанія. Місткість – близько 81,044 глядачів.</p>
+            <p><strong>Ліга:</strong> Ла Ліга (іспанська Прімера).</p>
+            <p><strong>Найпопулярніші гравці:</strong> Кріштіану Роналду, Альфредо Ді Стефано, Зінедін Зідан, Рауль, Ікер Касільяс.</p>
+            <p><strong>Склад команди (сезон 2024/25):</strong></p>
+            <ul>
+                <li><strong>Голкіпери:</strong> Серхіо Местре, Фран Гонсалес, Андрій Лунін, Тібо Куртуа.</li>
+                <li><strong>Захисники:</strong> Давід Хіменес, Рауль Асенсіо, Хакобо Рамон, Хесус Вальєхо, Фран Гарсія, Антоніо Рюдіґер, Ферлан Менді, Давід Алаба, Едер Мілітао, Даніель Карвахаль.</li>
+                <li><strong>Півзахисники:</strong> Орельєн Чуамені, Чема, Арда Гюлер, Джуд Беллінгем, Едуардо Камавінґа, Браїм Діас, Дані Себальос, Лука Модрич, Лукас Васкес, Федеріко Вальверде.</li>
+                <li><strong>Нападники:</strong> Кіліан Мбаппе, Ендрік, Родріго, Вінісіус Жуніор.</li>
+            </ul>
+            <p><strong>останні матчі:</strong></p>
+            <ul>
+                <li>Реал Мадрид 4:0 Осасуна (09.11.2024)</li>
+                <li>Реал Мадрид 1:3 Мілан (05.11.2024)</li>
+                <li>Реал Мадрид 0:4 Барселона (26.10.2024)</li>
+                <li>Реал Мадрид 5:2 Боруссія Д(22.10.2024)</li>
+                <li>Реал Мадрид 2:1 Сельта (19.10.2024)</li>
+            </ul>
+        </div>
+    </div>
+    <div id="tab3" class="tab-content">
+        <h2>FC Liverpool</h2>
+        <div class="team-info">
+            <p><strong>Логотип/емблема:</strong></p>
+            <img src="https://upload.wikimedia.org/wikipedia/uk/thumb/0/0c/Liverpool_FC.svg/185px-Liverpool_FC.svg.png" alt="Логотип Ліверпуль" class="team-logo">
+            <p><strong>Дата створення:</strong> 3 червня 1892 року.</p>
+            <p><strong>Кричалка:</strong> "You’ll Never Walk Alone".</p>
+            <p><strong>Домашній стадіон:</strong> Енфілд, Ліверпуль, Англія. Місткість – близько 53,394 глядачів.</p>
+            <p><strong>Ліга:</strong> Англійська Прем'єр-ліга.</p>
+            <p><strong>Найпопулярніші гравці:</strong> Стівен Джеррард, Кенні Далгліш, Іан Раш, Роббі Фаулер, Мохамед Салах.</p>
+            <p><strong>Склад команди (сезон 2023/24):</strong></p>
+            <ul>
+                <li><strong>Голкіпери:</strong> Гарві Девіс, Вітезслав Ярош, Квівін Келлехер, Аліссон Бекер.</li>
+                <li><strong>Захисники:</strong> Конор Бредлі, Джареал Кванса,Трент Александер-Арнольд, Ібраїм Конате, Константінос Цимікас, Ендрю Робертсон, Вірджіл ван Дейк, Енді Робертсон, Джо Гомес.</li>
+                <li><strong>Півзахисники:</strong> Тайлер Мортон, Трей Ньйоні, Раян Ґравенберх, Ватару Ендо, Домінік Собослаї, Алексіс Мак Аллістер, Гарві Елліотт, Кертіс Джонс.</li>
+                <li><strong>Нападники:</strong> Коді Ґакпо, Ранель Янг, Федеріко К'єза, Дарвін Нуньєс, Луїс Діас, Діогу Жота, Мохамед Салах.</li>
+            </ul>
+            <p><strong>3 останні гри:</strong></p>
+            <ul>
+                <li>Ліверпуль 2:0 Астон Вілла (09.11.2024)</li>
+                <li>Ліверпуль 4:0 Баєр 04 (05.11.2024)</li>  
+                <li>Ліверпуль 2:1 Брайтон (02.11.2024)</li>
+                <li>Ліверпуль 3:2 Брайтон (30.10.2024)</li>
+                <li>Ліверпуль 2:2 Арсенал (27.10.2024)</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript для перемикання вкладок -->
+<script>
+    function openTab(tabId) {
+        var tabs = document.getElementsByClassName('tab-content');
+        var tabButtons = document.getElementsByClassName('tab');
+        
+        for (var i = 0; i < tabs.length; i++) {
+            tabs[i].classList.remove('active');
+            tabButtons[i].classList.remove('active-tab');
+        }
+        
+        document.getElementById(tabId).classList.add('active');
+        event.currentTarget.classList.add('active-tab');
+    }
+</script>
+
+</body>
+</html>
